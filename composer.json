@@ -1,0 +1,23 @@
+{
+    "name": "pear/file_gettext",
+    "description": "Reader and writer for GNU PO and MO files.",
+    "type": "library",
+    "keywords": [ "gettext" ],
+    "homepage": "https://github.com/pear/File_Gettext",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Michael Wallner",
+            "email": "mike@php.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.0.0",
+        "ext-pcre": "*",
+        "pear/pear_exception": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "File_Gettext": "" }
+    },
+    "include-path": [""]
+}
