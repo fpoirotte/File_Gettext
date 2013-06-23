@@ -13,8 +13,7 @@
     ],
     "require": {
         "php": ">=5.0.0",
-        "ext-pcre": "*",
-        "pear/pear_exception": "dev-master"
+        "ext-pcre": "*"
     },
     "autoload": {
         "psr-0": { "File_Gettext": "" }
