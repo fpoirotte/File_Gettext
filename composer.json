@@ -1,9 +1,9 @@
 {
-    "name": "pear/file_gettext",
-    "description": "Reader and writer for GNU PO and MO files.",
+    "name": "fpoirotte/file_gettext",
+    "description": "Reader and writer for GNU PO and MO files",
     "type": "library",
     "keywords": [ "gettext" ],
-    "homepage": "https://github.com/pear/File_Gettext",
+    "homepage": "https://github.com/fpoirotte/File_Gettext",
     "license": "BSD",
     "authors": [
         {
@@ -11,9 +11,17 @@
             "email": "mike@php.net"
         }
     ],
+    "support": {
+        "issues": "https://github.com/fpoirotte/File_Gettext/issues",
+        "source": "https://github.com/fpoirotte/File_Gettext"
+    },
     "require": {
         "php": ">=5.0.0",
         "ext-pcre": "*"
+    },
+    "provide": {
+        "pear/file_gettext": "0.4.2",
+        "pear/file_gettext": "0.4.2-patch1"
     },
     "autoload": {
         "psr-0": { "File_Gettext": "" }
