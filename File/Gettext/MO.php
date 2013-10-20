@@ -173,10 +173,7 @@ class File_Gettext_MO extends File_Gettext
             return parent::raiseError($php_errormsg . ' ' . $file);
         }
         // lock MO file shared
-        if (!@flock($this->_handle, LOCK_SH)) {
-            @fclose($this->_handle);
-            return parent::raiseError($php_errormsg . ' ' . $file);
-        }
+        @flock($this->_handle, LOCK_SH);
 
         // read (part of) magic number from MO file header and define endianess
         switch ($magic = current($array = unpack('c', $this->_read(4))))
