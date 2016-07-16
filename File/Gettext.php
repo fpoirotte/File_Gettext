@@ -85,7 +85,7 @@ class File_Gettext
             return File_Gettext::raiseError($php_errormsg);
         }
         $class = 'File_Gettext_' . $format;
-        $obref = &new $class($file);
+        $obref = new $class($file);
         return $obref;
     }
 
@@ -110,7 +110,7 @@ class File_Gettext
 
         include_once 'File/Gettext/PO.php';
 
-        $PO = &new File_Gettext_PO($pofile);
+        $PO = new File_Gettext_PO($pofile);
         if (true !== ($e = $PO->load())) {
             return $e;
         }
@@ -247,7 +247,7 @@ class File_Gettext
     function &toMO()
     {
         include_once 'File/Gettext/MO.php';
-        $MO = &new File_Gettext_MO;
+        $MO = new File_Gettext_MO;
         $MO->fromArray($this->toArray());
         return $MO;
     }
@@ -261,7 +261,7 @@ class File_Gettext
     function &toPO()
     {
         include_once 'File/Gettext/PO.php';
-        $PO = &new File_Gettext_PO;
+        $PO = new File_Gettext_PO;
         $PO->fromArray($this->toArray());
         return $PO;
     }
