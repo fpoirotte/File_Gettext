@@ -20,8 +20,7 @@
         "ext-pcre": "*"
     },
     "provide": {
-        "pear/file_gettext": "0.4.2",
-        "pear/file_gettext": "0.4.2-patch1"
+        "pear/file_gettext": "0.4.2"
     },
     "autoload": {
         "psr-0": { "File_Gettext": "" }
