@@ -4,7 +4,7 @@
     "type": "library",
     "keywords": [ "gettext" ],
     "homepage": "https://github.com/fpoirotte/File_Gettext",
-    "license": "BSD",
+    "license": "BSD-2-Clause",
     "authors": [
         {
             "name": "Michael Wallner",
